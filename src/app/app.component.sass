@@ -1,0 +1,170 @@
+.p-2
+    padding: 2rem !important
+.pt-1
+    padding-top: .75rem !important
+.pr-2
+    padding-top: 1.5rem !important
+.text-right
+    text-align: right !important
+.col-right
+    justify-content: end !important
+.my-3
+    margin: 3rem 0 !important
+.mr-1
+    margin-right: 1rem !important
+.pointer
+    cursor: pointer !important
+.text-center
+    text-align: center !important
+.w-100
+    width: 100% !important
+.bg-none
+    background: none !important
+.container
+    max-width: 1200px
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+
+.btn
+    background-color: #5f30e1
+    border: none
+    padding: 10px 20px
+    border-radius: 30px
+    color: #fff
+    &:disabled
+        opacity: 0.75
+        cursor: not-allowed
+
+.btn-outline
+    background-color: transparent
+    border: 2px solid #5f30e1
+    padding: 10px 20px
+    border-radius: 30px
+    color: #5f30e1
+    &:disabled
+        opacity: 0.75
+        cursor: not-allowed
+.listing
+    border: none
+    width: 1200px
+    border-spacing: 0
+    th,td
+        text-align: left
+        margin: 0px 0px 10px
+        padding: 15px 10px
+        &:nth-child(1)
+            text-align: center
+    .head
+        border-radius: 10px
+        overflow: hidden
+        background: #5F30E1
+        color: #fff
+        th
+            font-weight: 700
+            &:first-child
+                padding-left: 25px
+                text-align: center
+                border-radius: 50px 0px 0px 50px
+            &:last-child
+                border-radius: 0px 50px 50px 0px
+    .body
+        &:before
+            line-height: 1.5em
+            content: "\200C"
+            display: block
+            background-color: rgba(0,0,0,0)
+        tr
+            background: #fff
+        tr:first-child td:first-child
+            border-top-left-radius: 35px
+
+        tr:first-child td:last-child
+            border-top-right-radius: 35px
+
+        tr:last-child td:first-child
+            border-bottom-left-radius: 35px
+
+        tr:last-child td:last-child
+            border-bottom-right-radius: 35px
+.card
+    width: 95%
+    margin: auto
+    background: rgba(95, 48, 225, 0.05)
+    border-radius: 25px
+    padding: 40px 0px
+    .heading
+        padding: 0 40px
+    .form-input
+        padding: 5px 20px
+        width: 100%
+        label
+            display: block
+            padding: 10px
+            .error
+                font-size: 13px
+                float: right
+                color: #f00
+        input,
+        select
+            border: 0
+            box-sizing: border-box
+            padding: 10px 25px 10px 25px
+            margin: 0
+            width: 100%
+            border-radius: 20px
+            display: block
+    .row
+        display: flex
+        justify-content: space-evenly
+        .col
+            display: flex
+            justify-content: center
+            flex-grow: 1
+            flex-basis: 0
+            .image
+                width: 250px
+                height: 250px
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+            table
+                width: 100%
+                padding: 10px
+                tr
+                    background-color: transparent
+                tr + tr
+                    border-top: 1px
+                th
+                    text-align: left
+                    font-weight: 700
+                td
+                    text-align: right
+    
+
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    right: 0
+    bottom: 0
+    z-index: 999999999
+    background-color: rgba(255,255,255,.65)
+    .card
+        text-align: center
+        width: 300px
+        padding: 30px
+        border-radius: 30px
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, .4)
+        background-color: #fff
+        .success
+            width: 70px
+        .btn    
+            opacity: 0.75
+
+        
