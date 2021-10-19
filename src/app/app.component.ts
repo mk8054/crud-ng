@@ -75,7 +75,7 @@ export class AppComponent {
       isOpen: false,
     };
     this.userForm.reset();
-    this.userForm.setValue({ gender: 'Male' });
+    this.userForm.patchValue({ gender: 'Male' });
     this.isAddUser = false;
     this.isEditingUser = false;
   }
