@@ -75,6 +75,7 @@ export class AppComponent {
       isOpen: false,
     };
     this.userForm.reset();
+    this.userForm.setValue({ gender: 'Male' });
     this.isAddUser = false;
     this.isEditingUser = false;
   }
@@ -92,7 +93,7 @@ export class AppComponent {
 
   submitUser() {
     let data = {
-      name: `${this.userForm.value.fname} ${this.userForm.value.lname}`,
+      name: `${this.userForm.value.fname} ${this.userForm.value.lname || ''}`,
       gender: this.userForm.value.gender,
       email: this.userForm.value.email,
       state: this.userForm.value.state,
@@ -106,7 +107,7 @@ export class AppComponent {
     }
     this.appService.httpRequest(req, url, data)?.subscribe(
       (res: any) => {
-        this.isModalOpen = true
+        this.isModalOpen = true;
         if (this.selectedUser._id) {
           let index = this.userList.findIndex(
             (user) => user._id == this.selectedUser._id
